@@ -4952,7 +4952,7 @@ a:hover {
         line-height: 1em;
         height: 2px;
         left: 0;
-        top: 1.5em;
+        /* top: 1.5em; */
         -webkit-transform-origin: center center;
         -ms-transform-origin: center center;
         transform-origin: center center;
