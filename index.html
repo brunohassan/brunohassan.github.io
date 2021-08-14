@@ -31,6 +31,7 @@
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="./css/styles.min.css?v=1.8">
     <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/floating-btn.css">
 
     <!-- JAVASCRIPT -->
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
@@ -50,6 +51,35 @@
 </head>
 
 <body class="loading loaded">
+    <div class="fab-container">
+        <div class="fab fab-icon-holder">
+            <p class="vertical-align--s-center" id="language">EN</p>
+        </div>
+        <ul class="fab-options">
+            <li>
+                <!-- <span class="fab-label">Português</span> -->
+                <div class="fab-icon-holder" onclick="setLanguage('PT')">
+                    <p class="vertical-align--s-center ">PT</p>
+                </div>
+            </li>
+            <li>
+                <!-- <span class="fab-label">English</span> -->
+                <div class="fab-icon-holder" onclick="setLanguage('EN')">
+                    <p class="vertical-align--s-center ">EN</p>
+                </div>
+            </li>
+            <!-- <li>
+                <div class="fab-icon-holder" onclick="setLanguage('FR')">
+                    <p class="vertical-align--s-center ">FR</p>
+                </div>
+            </li>
+            <li>
+                <div class="fab-icon-holder" onclick="setLanguage('ES')">
+                    <p class="vertical-align--s-center ">ES</p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
     <div class="site-wrapper">
         <!-- <a data-overlay="main-menu" class="main-menu-trigger mobile-menu-slices hidden--l hidden--xl">
             <span class="slice"></span>
@@ -62,13 +92,13 @@
         </a> -->
         <header id="header">
             <section class="fullpage-section block block--hero background-color-dark-grey">
-                <h1 class="block__title as-h6 proxima-nova-bold uppercase text-align--s-center text-color-main-color subtitled padding--horizontal--s-8 padding--vertical--s-3">Developer &amp; Data Analyst</h1>
+                <h1 data-lang="header_title" class="block__title as-h6 proxima-nova-bold uppercase text-align--s-center text-color-main-color subtitled padding--horizontal--s-8 padding--vertical--s-3">Developer &amp; Data Analyst</h1>
 
                 <div class="block__content vertical-align-helper text-align--s-center">
                     <div class="vertical-align--s-middle">
                         <h4 style="margin:4">
                             <p style="margin:0;padding:0;font-size:60%;font-weight: 100;font-family: -webkit-pictograph;" class="text-color-main-color">
-                                <em>Hey, I'm</em>
+                                <em data-lang="header_im">Hey, I'm</em>
                             </p>
                         </h4>
                         <div class="name text-color-main-color" style="font-size: 250%;font-weight: 800; text-transform: uppercase;">
@@ -77,12 +107,12 @@
                     </div>
                 </div>
                 <nav class="main-nav text-color-main-color">
-                    <!-- <ul>
-                        <li><a class="underlined--white" href="#about">About</a></li>
-                        <li><a class="underlined--white" href="#work">Work</a></li>
-                        <li><a class="underlined--white" href="#interests">Interests</a></li>
-                        <li><a class="underlined--white" href="#contact">Contact</a></li>
-                    </ul> -->
+                    <ul>
+                        <li><a data-lang="nav_about" class="underlined--white" href="#about">About</a></li>
+                        <li><a data-lang="nav_work" class="underlined--white" href="#work">Work</a></li>
+                        <li><a data-lang="nav_interests" class="underlined--white" href="#interests">Interests</a></li>
+                        <li><a data-lang="nav_contact" class="underlined--white" href="#contact">Contact</a></li>
+                    </ul>
                 </nav>
             </section>
         </header>
@@ -98,14 +128,14 @@
                         </div>
                     </div>
 
-                    <!-- <nav class="main-nav text-color--grey-dark hidden--s hidden--m">
+                    <nav class="main-nav text-color--grey-dark hidden--s hidden--m">
                         <ul>
-                            <li><a class="underlined--white" href="#about">About</a></li>
-                            <li><a class="underlined--white" href="#work">Work</a></li>
-                            <li><a class="underlined--white" href="#interests">Interests</a></li>
-                            <li><a class="underlined--white" href="#contact">Contact</a></li>
+                            <li><a data-lang="nav_about" class="underlined--white" href="#about">About</a></li>
+                            <li><a data-lang="nav_work" class="underlined--white" href="#work">Work</a></li>
+                            <li><a data-lang="nav_interests" class="underlined--white" href="#interests">Interests</a></li>
+                            <li><a data-lang="nav_contact" class="underlined--white" href="#contact">Contact</a></li>
                         </ul>
-                    </nav> -->
+                    </nav>
 
                     <img class="portrait responsive hidden--s hidden--m" src="./img/bruno.png" alt="">
                 </div>
@@ -114,35 +144,35 @@
                     <!-- CRIAR SLIDER -->
                     <div class="row padding--s-2 padding--m-4 padding--xl-8">
                         <div class="column--s-12 padding--s-1 padding--m-2">
-                            <p class="proxima-nova-bold">I am a data analyst and developer living in São Paulo, Brazil.</p>
-                            <p>
+                            <p data-lang="about_head" class="proxima-nova-bold">I am a data analyst and developer living in São Paulo, Brazil.</p>
+                            <p data-lang="about_life">
                                 Passionate for the unpredictability of life and trying to look on its bright side. Apart from work, I enjoy my time praticing sports, listening to music and knowing new places.
                             </p>
                         </div>
                         <div class="column--s-12">
                             <div class="row">
                                 <div class="column--s-12 padding--s-1 padding--m-2">
-                                    <h5 class="">Work and Projects</h5>
+                                    <h5 data-lang="about_trampo_title" class="">Work and Projects</h5>
                                 </div>
                                 <div class="row">
                                     <div class="column--s-12  padding--s-1 padding--m-2">
-                                        <p>
+                                        <p data-lang="about_trampo_description">
                                             Always intriged by math and other sciences, I seeked a control engineering bachelor in UNICAMP, which is a magnificent place to be part of.<br/> Since I found out about programming, i love using it as a tool
                                             to automate and make everything more practical. Integrating it with mathematical models has been and amazing adventure on designing plans to optimize companies' processes.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="column--s-12 padding--s-1 padding--m-2">
-                                    <p>Some of my personal projects include house automation, illustrations and investments. <br/> Meanwhile, some of my interests are:</p>
+                                    <p data-lang="about_projects">Some of my personal projects include house automation, illustrations and investments. <br/> Meanwhile, some of my interests are:</p>
                                     <!-- <p class="subtitled">
                                         <span class="proxima-nova-bold uppercase"><span class="text-color-main-color">1.</span> Research</span> and gather the present state <br>
                                         <span class="proxima-nova-bold uppercase"><span class="text-color-main-color">2.</span> Structure</span> setup and content of the project <br>
                                     </p>-->
                                     <ul>
-                                        <li>Data Science</li>
-                                        <li>Big Data</li>
-                                        <li>Internet of Things</li>
-                                        <li>Cloud Computing</li>
+                                        <li data-lang="about_datasci">Data Science</li>
+                                        <li data-lang="about_iot">Internet of Things</li>
+                                        <li data-lang="about_bigdata">Big Data</li>
+                                        <li data-lang="about_cloud">Cloud Computing</li>
                                     </ul>
                                 </div>
                             </div>
@@ -165,10 +195,10 @@
                 <div class="column--s-12">
                     <nav class="main-nav text-color-main-color">
                         <ul>
-                            <li><a data-overlay="main-menu" class="underlined--white" href="#about">About</a></li>
-                            <li><a data-overlay="main-menu" class="underlined--white" href="#work">Work</a></li>
-                            <li><a data-overlay="main-menu" class="underlined--white" href="#interests">Interests</a></li>
-                            <li><a data-overlay="main-menu" class="underlined--white" href="#contact">Contact</a></li>
+                            <li><a data-lang="nav_about" data-overlay="main-menu" class="underlined--white" href="#about">About</a></li>
+                            <li><a data-lang="nav_work" data-overlay="main-menu" class="underlined--white" href="#work">Work</a></li>
+                            <li><a data-lang="nav_interests" data-overlay="main-menu" class="underlined--white" href="#interests">Interests</a></li>
+                            <li><a data-lang="nav_contact" data-overlay="main-menu" class="underlined--white" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
