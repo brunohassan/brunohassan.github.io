@@ -30,7 +30,7 @@
 
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="./css/styles.min.css?v=1.8">
-    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
     <link type="text/css" rel="stylesheet" href="./css/floating-btn.css">
 
     <!-- JAVASCRIPT -->
@@ -110,7 +110,7 @@
                     <ul>
                         <li><a data-lang="nav_about" class="underlined--white" href="#about">About</a></li>
                         <li><a data-lang="nav_work" class="underlined--white" href="#work">Work</a></li>
-                        <li><a data-lang="nav_interests" class="underlined--white" href="#interests">Interests</a></li>
+                        <li><a data-lang="nav_skills" class="underlined--white" href="#skills">Skills</a></li>
                         <li><a data-lang="nav_contact" class="underlined--white" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -119,7 +119,6 @@
         <div class="site-main fullpage">
             <section data-id="about" class="fullpage-section block block--about chapter" data-viewport-height="100">
                 <div class="chapter__title" style="top: 0px;height: 100vh;">
-                    <!-- CRIAR SLIDER -->
                     <div class="vertical-align-helper text-align--s-center background-color-main-color" data-viewport-height="100">
                         <div class="vertical-align--s-middle">
                             <h2 class="text-color--white subtitled uppercase">
@@ -132,7 +131,7 @@
                         <ul>
                             <li><a data-lang="nav_about" class="underlined--white" href="#about">About</a></li>
                             <li><a data-lang="nav_work" class="underlined--white" href="#work">Work</a></li>
-                            <li><a data-lang="nav_interests" class="underlined--white" href="#interests">Interests</a></li>
+                            <li><a data-lang="nav_skills" class="underlined--white" href="#skills">Skills</a></li>
                             <li><a data-lang="nav_contact" class="underlined--white" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -140,8 +139,7 @@
                     <img class="portrait responsive hidden--s hidden--m" src="./img/bruno.png" alt="">
                 </div>
 
-                <div class="chapter__content">
-                    <!-- CRIAR SLIDER -->
+                <div class="chapter__content" style="top: 0px;height: 100vh;">
                     <div class="row padding--s-2 padding--m-4 padding--xl-8">
                         <div class="column--s-12 padding--s-1 padding--m-2">
                             <p data-lang="about_head" class="proxima-nova-bold">I am a data analyst and developer living in São Paulo, Brazil.</p>
@@ -152,7 +150,7 @@
                         <div class="column--s-12">
                             <div class="row">
                                 <div class="column--s-12 padding--s-1 padding--m-2">
-                                    <h5 data-lang="about_trampo_title" class="">Work and Projects</h5>
+                                    <h5 data-lang="about_trampo_title" class="">My path until now...</h5>
                                 </div>
                                 <div class="row">
                                     <div class="column--s-12  padding--s-1 padding--m-2">
@@ -182,6 +180,56 @@
                     </div> -->
                 </div>
             </section>
+            <section data-id="work" class="fullpage-section block block--work chapter" data-viewport-height="100">
+                <div class="chapter__title" style="top: 0px;height: 100vh;">
+                    <div class="vertical-align-helper text-align--s-center background-color-white" data-viewport-height="100">
+                        <div class="vertical-align--s-middle">
+                            <h2 class="text-color--black subtitled uppercase">
+                                <img src="./img/work.svg" alt="">
+                            </h2>
+                        </div>
+                    </div>
+
+                    <nav class="main-nav text-color--black hidden--s hidden--m">
+                        <ul>
+                            <li><a data-lang="nav_about" class="underlined--main-color" href="#about">About</a></li>
+                            <li><a data-lang="nav_work" class="underlined--main-color" href="#work">Work</a></li>
+                            <li><a data-lang="nav_skills" class="underlined--main-color" href="#skills">Skills</a></li>
+                            <li><a data-lang="nav_contact" class="underlined--main-color" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="chapter__content background-color-dark-grey text-color-white" style="top: 0px;height: 100vh;">
+                    <div class="row padding--s-2 padding--m-4 padding--xl-8">
+                        <div class="column--s-12">
+                            <div class="row">
+                                <div class="column--s-12 padding--s-1 padding--m-2">
+                                    <h5 class="">Itaú Unibanco S.A.</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="column--s-12  padding--s-1 padding--m-2">
+                                        <p data-lang="work_estag" class="proxima-nova-bold">Intern</p>
+                                        <p data-lang="work_estag_desc">
+                                            - Web development using Python (Flask and Django) aiming the automation and optimization of heavy workflows;<br/> - Bash development (Powershell) to automate bureaucratic companies processess.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column--s-12  padding--s-1 padding--m-2">
+                                        <p data-lang="work_analista" class="proxima-nova-bold">Data Analyst</p>
+                                        <p data-lang="work_analista_desc">
+                                            - Extracting analysis and creating visualizations from data to identify tendencies;<br/> - Statistical modeling aiming agility and processes improvement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row padding--s-2 padding--m-4 padding--xl-8">
+                    </div> -->
+                </div>
+            </section>
         </div>
         <!-- <footer class="site-footer background-color-main-color text-align--s-center" style="height:100vh">
 
@@ -197,7 +245,7 @@
                         <ul>
                             <li><a data-lang="nav_about" data-overlay="main-menu" class="underlined--white" href="#about">About</a></li>
                             <li><a data-lang="nav_work" data-overlay="main-menu" class="underlined--white" href="#work">Work</a></li>
-                            <li><a data-lang="nav_interests" data-overlay="main-menu" class="underlined--white" href="#interests">Interests</a></li>
+                            <li><a data-lang="nav_skills" data-overlay="main-menu" class="underlined--white" href="#skills">Skills</a></li>
                             <li><a data-lang="nav_contact" data-overlay="main-menu" class="underlined--white" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
