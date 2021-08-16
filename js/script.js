@@ -22,8 +22,10 @@ var language = {
         about_bigdata: "Big Data",
         about_cloud: "Cloud Computing",
         work_estag: "Intern",
+        work_estag_period: "May 2019 - May 2021",
         work_estag_desc: `- Web development using Python (Flask and Django) aiming the automation and optimization of heavy workflows;<br/> - Bash development (Powershell) to automate bureaucratic companies processess.`,
         work_analista: "Data Analyst",
+        work_analista_period: "Jun 2021 - Today",
         work_analista_desc: `- Extracting analysis and creating visualizations from data to identify tendencies;<br/> - Statistical modeling aiming agility and processes improvement.`,
     },
     PT: {
@@ -44,9 +46,11 @@ var language = {
         about_bigdata: "Big Data",
         about_cloud: "Computação em Cloud",
         work_estag: "Estagiário",
+        work_estag_period: "Mai 2019 - Mai 2021",
         work_estag_desc: `- Desenvolvimento Web em frameworks Python (Flask e Django) com o objetivo de automatizar e otimizar fluxos de trabalhos custosos aos colaboradores;<br/> - Desenvolvimento bash (Powershell) para a automatização
         de processos internos burocráticos.`,
         work_analista: "Analista de Suporte de TI",
+        work_analista_period: "Jun 2021 - Hoje",
         work_analista_desc: `- Criação de análises e visualizações de dados para a identificação de tendências;<br/> - Aplicação de modelos estatísticos sobre dados para análise de modo a auxiliar na modernização e melhoria de processos.`,
     }
 };
