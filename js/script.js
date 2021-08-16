@@ -3,13 +3,6 @@ $(document).ready(function() {
     // $('.site-main').css('margin-top', window.innerHeight - $('.main-nav').height()); // trecho para add navbar fixa no top
 });
 
-function setLanguage(languageName) {
-    $('[data-lang]').each(function() {
-        this.innerHTML = language[languageName][this.dataset["lang"]];
-    });
-    $('#language')[0].innerText = languageName;
-}
-
 var language = {
     EN: {
         header_title: 'Developer &amp; Data Analyst',
@@ -56,4 +49,16 @@ var language = {
         work_analista: "Analista de Suporte de TI",
         work_analista_desc: `- Criação de análises e visualizações de dados para a identificação de tendências;<br/> - Aplicação de modelos estatísticos sobre dados para análise de modo a auxiliar na modernização e melhoria de processos.`,
     }
+};
+// var navLinks = ['about', 'work', 'skills', 'contact'];
+
+// function capitalize(string) {
+//     return string.charAt(0).toUpperCase() + string.slice(1);
+// }
+
+function setLanguage(languageName) {
+    $('[data-lang]').each(function() {
+        this.innerHTML = language[languageName][this.dataset["lang"]];
+    });
+    $('#language')[0].innerText = languageName;
 }
