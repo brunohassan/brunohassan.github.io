@@ -20,7 +20,7 @@
     src: url('../fonts/Barcelony/barcelony.woff') format('woff'), url('../fonts/Barcelony/barcelony.woff2') format('woff2'), url('../fonts/Barcelony/barcelony.ttf') format('truetype');
 }
 
-barcelony #header {
+#header {
     position: fixed;
     top: 0;
     left: 0;
