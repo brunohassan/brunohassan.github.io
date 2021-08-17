@@ -36,18 +36,6 @@
     <!-- JAVASCRIPT -->
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <style type="text/css">
-        .name::before,
-        .name::after {
-            display: inline-block;
-            content: "";
-            border-top: .2rem solid var(--main-color);
-            width: 4rem;
-            margin: 0 1rem;
-            transform: translateY(-0.5rem);
-        }
-    </style>
 </head>
 
 <body class="loading loaded">
@@ -98,7 +86,7 @@
                     <div class="vertical-align--s-middle">
                         <h4 style="margin:4">
                             <p style="margin:0;padding:0;font-size:60%;font-weight: 100;font-family: -webkit-pictograph;" class="text-color-main-color">
-                                <em data-lang="header_im">Hey, I'm</em>
+                                <em data-lang="header_im">Hi, I'm</em>
                             </p>
                         </h4>
                         <div class="name text-color-main-color" style="font-size: 250%;font-weight: 800; text-transform: uppercase;">
@@ -116,18 +104,16 @@
                 </nav>
             </section>
         </header>
-        <div class="site-main fullpage">
+        <div class="fullpage">
             <section data-id="about" class="fullpage-section block block--about chapter" data-viewport-height="100">
                 <div class="chapter__title" style="top: 0px;height: 100vh;">
                     <div class="vertical-align-helper text-align--s-center background-color-main-color" data-viewport-height="100">
                         <div class="vertical-align--s-middle">
-                            <h2 class="text-color--white subtitled uppercase">
-                                <img src="./img/about.svg" alt="">
-                            </h2>
+                            <h2 data-lang="nav_about" class="text-color-main-color subtitled uppercase section-title">About</h2>
                         </div>
                     </div>
 
-                    <nav class="main-nav text-color--grey-dark hidden--s hidden--m">
+                    <nav class="main-nav text-color-main-color hidden--s hidden--m">
                         <ul>
                             <li><a data-lang="nav_about" class="underlined--white" href="#about">About</a></li>
                             <li><a data-lang="nav_work" class="underlined--white" href="#work">Work</a></li>
@@ -135,11 +121,9 @@
                             <li><a data-lang="nav_contact" class="underlined--white" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
-
-                    <img class="portrait responsive hidden--s hidden--m" src="./img/bruno.png" alt="">
                 </div>
 
-                <div class="chapter__content" style="top: 0px;height: 100vh;">
+                <div id="about" class="chapter__content" style="top: 0px;height: 100vh;">
                     <div class="row padding--s-2 padding--m-4 padding--xl-8">
                         <div class="column--s-12 padding--s-1 padding--m-2">
                             <p data-lang="about_head" class="proxima-nova-bold">I am a data analyst and developer living in São Paulo, Brazil.</p>
@@ -155,8 +139,8 @@
                                 <div class="row">
                                     <div class="column--s-12  padding--s-1 padding--m-2">
                                         <p data-lang="about_trampo_description">
-                                            Always intriged by math and other sciences, I seeked a control engineering bachelor in UNICAMP, which is a magnificent place to be part of.<br/> Since I found out about programming, i love using it as a tool
-                                            to automate and make everything more practical. Integrating it with mathematical models has been and amazing adventure on designing plans to optimize companies' processes.
+                                            Always intriged by math and other sciences, I seeked a bachelor degree in automation and control engineering in UNICAMP, which is a magnificent place to be part of.<br/> Since I found out about programming,
+                                            i love using it as a tool to automate and make everything more practical. Integrating it with mathematical models has been and amazing adventure on designing plans to optimize companies' processes.
                                         </p>
                                     </div>
                                 </div>
@@ -184,13 +168,11 @@
                 <div class="chapter__title" style="top: 0px;height: 100vh;">
                     <div class="vertical-align-helper text-align--s-center background-color-white" data-viewport-height="100">
                         <div class="vertical-align--s-middle">
-                            <h2 class="text-color--black subtitled uppercase">
-                                <img src="./img/work.svg" alt="">
-                            </h2>
+                            <h2 data-lang="nav_work" class="text-color-main-color subtitled uppercase section-title" style="color:var(--main-color)!important">Work</h2>
                         </div>
                     </div>
 
-                    <nav class="main-nav text-color--black hidden--s hidden--m">
+                    <nav class="main-nav text-color-main-color hidden--s hidden--m" style="color:var(--main-color)!important">
                         <ul>
                             <li><a data-lang="nav_about" class="underlined--main-color" href="#about">About</a></li>
                             <li><a data-lang="nav_work" class="underlined--main-color" href="#work">Work</a></li>
@@ -200,17 +182,17 @@
                     </nav>
                 </div>
 
-                <div class="chapter__content background-color-dark-grey text-color-white" style="top: 0px;height: 100vh;">
+                <div id="work" class="chapter__content background-color-dark-grey text-color-white" style="top: 0px;height: 100vh;">
                     <div class="row padding--s-2 padding--m-4 padding--xl-8">
                         <div class="column--s-12">
                             <div class="row">
                                 <div class="column--s-12 padding--s-1 padding--m-2">
-                                    <h5 class="text-color-main-color">Itaú Unibanco S.A.</h5>
+                                    <h4 class="text-color-main-color">Itaú Unibanco S.A.</h4>
                                 </div>
                                 <div class="row">
                                     <div class="column--s-12  padding--s-1 padding--m-2">
                                         <p data-lang="work_estag" class="proxima-nova-bold" style="font-size: 120%;">Intern</p>
-                                        <p data-lang="work_estag_period" style="color:var(--main-color)!important;font-size: 75%;">May 2019 - May 2021</p>
+                                        <p data-lang="work_estag_period" style="color:var(--light-main-color)!important;font-size: 85%;">May 2019 - May 2021</p>
                                         <p data-lang="work_estag_desc">
                                             - Web development using Python (Flask and Django) aiming the automation and optimization of heavy workflows;<br/> - Bash development (Powershell) to automate bureaucratic companies processess.
                                         </p>
@@ -219,7 +201,7 @@
                                 <div class="row">
                                     <div class="column--s-12  padding--s-1 padding--m-2">
                                         <p data-lang="work_analista" class="proxima-nova-bold" style="font-size: 120%;">Data Analyst</p>
-                                        <p data-lang="work_analista_period" style="color:var(--main-color)!important;font-size: 75%;">Jun 2021 - Today</p>
+                                        <p data-lang="work_analista_period" style="color:var(--light-main-color)!important;font-size: 85%;">Jun 2021 - Today</p>
                                         <p data-lang="work_analista_desc">
                                             - Extracting analysis and creating visualizations from data to identify tendencies;<br/> - Statistical modeling aiming agility and processes improvement.
                                         </p>
@@ -232,11 +214,128 @@
                     </div> -->
                 </div>
             </section>
+            <section data-id="skills" class="fullpage-section block block--skills chapter" data-viewport-height="100">
+                <div class="chapter__title" style="top: 0px;height: 100vh;">
+                    <div class="vertical-align-helper text-align--s-center background-color-main-color" data-viewport-height="100">
+                        <div class="vertical-align--s-middle">
+                            <h2 data-lang="nav_skills" class="text-color-main-color subtitled uppercase section-title">Skills</h2>
+                        </div>
+                    </div>
+
+                    <nav class="main-nav text-color-main-color hidden--s hidden--m">
+                        <ul>
+                            <li><a data-lang="nav_about" class="underlined--white" href="#about">About</a></li>
+                            <li><a data-lang="nav_work" class="underlined--white" href="#work">Work</a></li>
+                            <li><a data-lang="nav_skills" class="underlined--white" href="#skills">Skills</a></li>
+                            <li><a data-lang="nav_contact" class="underlined--white" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="skills" class="chapter__content" style="top: 0px;height: 100vh;">
+                    <div class="row padding--s-2 padding--m-4 padding--xl-8">
+                        <div class="column--s-12">
+                            <div class="row">
+                                <div class="column--s-12 padding--s-1 padding--m-2">
+                                    <h4 data-lang="skill_educacao" style="color:var(--main-color)">Education</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="padding--s-1 padding--m-2">
+                                        <p class="proxima-nova-bold" style="font-size: 120%;margin-bottom: 0;"><strong>Universidade Estadual de Campinas - UNICAMP</strong></p>
+                                        <p data-lang="skill_curso" style="font-size: 120%;margin-bottom: 0;">Automation and Control Engineering</p>
+                                        <p data-lang="skill_curso_data" style="font-size: 85%;">Feb 2015 - Dec 2021</p>
+                                    </div>
+                                </div>
+                                <div class="column--s-12 padding--s-1 padding--m-2">
+                                    <h4 data-lang="skill_skill" style="color:var(--main-color)">Skills</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="column--s-12">
+                                        <div class="padding--s-1 padding--m-2" style="padding-bottom: 0;padding-top: 0;">
+                                            <p data-lang="skill_prog" class="proxima-nova-bold" style="font-size: 120%;margin-bottom: 0;">Programming and Tools</p>
+                                        </div>
+                                        <div class="padding--s-1 padding--m-2">
+                                            <ul class="column--s-4" style="list-style-type: none;padding-left: 0;">
+                                                <li>Python</li>
+                                                <li>JavaScript</li>
+                                                <li>SQL</li>
+                                            </ul>
+                                            <ul class="column--s-4" style="list-style-type: none;padding-left: 0;">
+                                                <li>HTML5</li>
+                                                <li>CSS</li>
+                                                <li>C</li>
+                                            </ul>
+                                            <ul class="column--s-4" style="list-style-type: none;padding-left: 0;">
+                                                <li>Flutter</li>
+                                                <li>Powershell</li>
+                                                <li>Assembly ARM</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column--s-8">
+                                        <div class="padding--s-1 padding--m-2" style="padding-bottom: 0;padding-top: 0;">
+                                            <p data-lang="lang" class="proxima-nova-bold" style="font-size: 120%;margin-bottom: 0;">Languages</p>
+                                        </div>
+                                        <div class="padding--s-1 padding--m-2">
+                                            <ul style="list-style-type: none;padding-left: 0;">
+                                                <li data-lang="pt">Portuguese</li>
+                                                <li data-lang="en">English</li>
+                                                <li data-lang="fr">French (Basic)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-id="contact" class="fullpage-section block block--contact chapter" data-viewport-height="100">
+                <div class="chapter__title" style="top: 0px;height: 100vh;">
+                    <div class="vertical-align-helper text-align--s-center background-color-white" data-viewport-height="100">
+                        <div class="vertical-align--s-middle">
+                            <h2 data-lang="nav_contact" class="text-color-main-color subtitled uppercase section-title" style="color:var(--main-color)!important">Contact</h2>
+                        </div>
+                    </div>
+
+                    <nav class="main-nav text-color-main-color hidden--s hidden--m" style="color:var(--main-color)!important">
+                        <ul>
+                            <li><a data-lang="nav_about" class="underlined--main-color" href="#about">About</a></li>
+                            <li><a data-lang="nav_work" class="underlined--main-color" href="#work">Work</a></li>
+                            <li><a data-lang="nav_skills" class="underlined--main-color" href="#skills">Skills</a></li>
+                            <li><a data-lang="nav_contact" class="underlined--main-color" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="contact" class="chapter__content background-color-dark-grey text-color-white" style="top: 0px;height: 100vh;">
+                    <div class="row padding--s-2 padding--m-4 padding--xl-8">
+                        <div class="column--s-12">
+                            <div class="row">
+                                <div class="column--s-12  padding--s-1 padding--m-2">
+                                    <h4 class="proxima-nova-bold" style="font-size: 120%;">Bruno Hassan Mouazzem</h4>
+                                    <p data-lang="header_title">Developer &amp; Data Analyst</p>
+                                </div>
+                            </div>
+                            <div class="column--s-12  padding--s-1 padding--m-2">
+                                <a href="mailto:brunomouazzem@gmail.com">brunomouazzem@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="column--s-12">
+                            <div class="column--s-3"></div>
+                            <div class="column--s-3"></div>
+                            <div class="column--s-3"></div>
+                            <div class="column--s-3"></div>
+                        </div>
+                    </div>
+                    <!-- <img class="portrait responsive hidden--s hidden--m" src="./img/bruno.png" alt=""> -->
+
+                    <!-- <div class="row padding--s-2 padding--m-4 padding--xl-8">
+                    </div> -->
+                </div>
+            </section>
         </div>
         <!-- <footer class="site-footer background-color-main-color text-align--s-center" style="height:100vh">
-
         </footer> -->
-
     </div>
     <div class="overlay overlay--main-menu vertical-align-helper text-align--s-center background-color--white" data-overlay="main-menu">
         <a data-overlay="main-menu" class="overlay__background"></a>

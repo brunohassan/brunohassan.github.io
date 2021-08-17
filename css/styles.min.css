@@ -4090,7 +4090,7 @@ img.responsive {
 }
 
 .text-color-main-color {
-    color: var(--main-color) !important
+    color: var(--light-main-color) !important
 }
 
 .border-color-main-color {
@@ -4761,7 +4761,7 @@ body.loaded {
 
 a,
 a:visited {
-    color: var(--main-color);
+    color: var(--light-main-color);
     text-decoration: underline
 }
 
@@ -6730,7 +6730,7 @@ a:hover {
     }
     .project-nav ul li a.selected,
     .project-nav ul li a:hover {
-        color: var(--main-color) !important
+        color: var(--light-main-color) !important
     }
 }
 
@@ -6762,7 +6762,7 @@ a:hover {
 }
 
 .underlined--main-color:after {
-    border-color: var(--main-color) !important
+    border-color: var(--light-main-color) !important
 }
 
 .underlined--dark-grey:after {
