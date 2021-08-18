@@ -54,15 +54,20 @@
     font-family: 'Barcelony';
 }
 
+.contact-icon {
+    height: 70px;
+}
+
+.chapter__content {
+    min-height: 100vh;
+}
+
 @media (min-width:992px) {
     .chapter__title {
         height: 100vh;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-    }
-    .chapter__content {
-        min-height: 100vh;
     }
     @media (max-width:1279px) {
         .site-wrapper {
