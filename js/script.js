@@ -1,11 +1,8 @@
 $(document).ready(function() {
     $('.mobile-menu-icon').css('margin-top', $('.mobile-menu-slices').height() / 2);
     // $('.site-main').css('margin-top', window.innerHeight - $('.main-nav').height()); // trecho para add navbar fixa no top
-    if (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) > 991) {
-        $('section[data-id]').each(function() {
-            $(this).css('height', $(this).find('.chapter__content').height())
-        });
-    }
+    adjustChapterSize();
+    $(window).resize(function() { adjustChapterSize() });
 });
 
 var language = {
@@ -98,3 +95,11 @@ $('.main-nav a').click(function(e) {
         scrollTop: targetOffset
     }, 500);
 });
+
+function adjustChapterSize() {
+    if (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) > 991) {
+        $('section[data-id]').each(function() {
+            $(this).css('height', $(this).find('.chapter__content').height())
+        });
+    }
+}
