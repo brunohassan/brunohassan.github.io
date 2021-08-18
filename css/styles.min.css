@@ -4778,7 +4778,7 @@ a:hover {
     position: relative;
     top: 0;
     width: 100%;
-    overflow: hidden
+    /* overflow: hidden */
 }
 
 @media (min-width:1px) {
@@ -6120,7 +6120,7 @@ a:hover {
 
 @media (min-width:992px) {
     .chapter .chapter__title {
-        position: absolute;
+        /* position: absolute; */
         width: 50%;
         top: 0;
         left: 0;
@@ -6134,6 +6134,7 @@ a:hover {
     .chapter .chapter__content {
         position: relative;
         width: 50%;
+        top: -100vh;
         left: 50%;
         z-index: 100;
         -webkit-transition: 1s width cubic-bezier(.77, 0, .175, 1) 0, 1s left cubic-bezier(.77, 0, .175, 1) 0;
