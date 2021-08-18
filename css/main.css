@@ -20,6 +20,11 @@
     src: url('../fonts/Barcelony/barcelony.woff') format('woff'), url('../fonts/Barcelony/barcelony.woff2') format('woff2'), url('../fonts/Barcelony/barcelony.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Inkgasm';
+    src: url('../fonts/Inkgasm/Inkgasm.woff') format('woff'), url('../fonts/Inkgasm/Inkgasm.woff2') format('woff2'), url('../fonts/Inkgasm/Inkgasm.ttf') format('truetype');
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -51,7 +56,8 @@
 }
 
 .section-title {
-    font-family: 'Barcelony';
+    font-family: 'Inkgasm';
+    font-size: 420%;
 }
 
 .contact-icon {
