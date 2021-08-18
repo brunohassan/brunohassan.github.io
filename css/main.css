@@ -5,19 +5,13 @@
 }
 
 @font-face {
-    font-family: 'FabfeltScript';
-    src: url('../fonts/FabfeltScript/webfont/fabfeltscript-bold.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/FabfeltScript/webfont/fabfeltscript-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/FabfeltScript/webfont/fabfeltscript-bold.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/FabfeltScript/webfont/fabfeltscript-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/FabfeltScript/webfont/fabfeltscript-bold.svg#svgFontName') format('svg');
-    /* Legacy iOS */
+    font-family: 'Barcelony';
+    src: url('../fonts/Barcelony/barcelony.woff') format('woff'), url('../fonts/Barcelony/barcelony.woff2') format('woff2'), url('../fonts/Barcelony/barcelony.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Barcelony';
-    src: url('../fonts/Barcelony/barcelony.woff') format('woff'), url('../fonts/Barcelony/barcelony.woff2') format('woff2'), url('../fonts/Barcelony/barcelony.ttf') format('truetype');
+    font-family: 'Inkgasm';
+    src: url('../fonts/Inkgasm/Inkgasm.woff') format('woff'), url('../fonts/Inkgasm/Inkgasm.woff2') format('woff2'), url('../fonts/Inkgasm/Inkgasm.ttf') format('truetype');
 }
 
 @font-face {
