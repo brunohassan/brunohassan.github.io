@@ -86,3 +86,9 @@
         }
     }
 }
+
+@media (max-width:992px) {
+    .site-wrapper {
+        overflow-x: hidden;
+    }
+}
