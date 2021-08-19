@@ -91,4 +91,14 @@
     .site-wrapper {
         overflow-x: hidden;
     }
+    .section-title {
+        font-family: 'Inkgasm';
+        font-size: 380%;
+    }
+}
+
+@media (max-width:1280) {
+    .contact-div {
+        margin-left: 4vh;
+    }
 }
