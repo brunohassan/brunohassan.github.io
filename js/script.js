@@ -25,13 +25,19 @@ var language = {
         about_cloud: "Cloud Computing",
         work_estag: "Intern",
         work_estag_period: "May 2019 - May 2021",
-        work_estag_desc: `- Web development using Python (Flask and Django) aiming the automation and optimization of heavy workflows;<br/> - Bash development (Powershell) to automate bureaucratic companies processess.`,
+        work_estag_desc: `<li>Developing websites with Python frameworks (Flask and Django) to automate workflows;</li>
+                                <li>Creating shell scripts for automating internal processes.</li>`,
         work_analista: "Data Analyst",
         work_analista_period: "Jun 2021 - Dec 2021",
-        work_analista_desc: `- Statistical modeling aiming agility and processes improvement.`,
+        work_analista_desc: `<li>Analyzing data to spot trends and creating visualizations;</li>
+                                <li>Using statistical modeling to improve processes;</li>`,
         work_developer: "Software Engineer",
         work_developer_period: "Jan 2022 - Today",
-        work_developer_desc: `- Cloud architecture design for web solution;<br/> - Backend web development.`,
+        work_developer_desc: `<li>Guided diverse technical teams, maintained industry standards, and ensured exceptional project delivery;</li>
+                                            <li>Used DDD, BDD, and agile methodologies for collaborative technical discovery;</li>
+                                            <li>Established efficient CI/CD pipelines with GitHub Actions for reliable software delivery.</li>
+                                            <li>Integrated various AWS services for optimal architecture;</li>
+                                            <li>Applied clean architecture principles for well-organized Python solutions.</li>`,
         skill_educacao: "Education",
         skill_curso: "Automation and Control Engineering",
         skill_curso_data: "Feb 2015 - Dec 2021",
@@ -62,14 +68,19 @@ var language = {
         about_cloud: "Computação em Cloud",
         work_estag: "Estagiário",
         work_estag_period: "Mai 2019 - Mai 2021",
-        work_estag_desc: `- Desenvolvimento Web em frameworks Python (Flask e Django) com o objetivo de automatizar e otimizar fluxos de trabalhos custosos aos colaboradores;<br/> - Desenvolvimento bash (Powershell) para a automatização
-        de processos internos burocráticos.`,
+        work_estag_desc: `<li>Desenvolvendo sites com frameworks em Python (Flask e Django) para automatizar fluxos de trabalho;</li>
+                            <li>Criando scripts de shell para automatizar processos internos.</li>`,
         work_analista: "Analista de Dados Jr.",
         work_analista_period: "Jun 2021 - Dez 2021",
-        work_analista_desc: `- Criação de análises e visualizações de dados para a identificação de tendências;<br/> - Aplicação de modelos estatísticos sobre dados para análise de modo a auxiliar na modernização e melhoria de processos.`,
+        work_analista_desc: `<li>Analisando dados para identificar tendências e criando visualizações;</li>
+                                <li>Utilizando modelagem estatística para aprimorar processos;</li>`,
         work_developer: "Engenheiro de Software",
         work_developer_period: "Jan 2022 - Hoje",
-        work_developer_desc: `- Design de arquitetura em cloud para as soluções web;<br/> - Desenvolvimento web backend.`,
+        work_developer_desc: `<li>Orientei equipes técnicas diversas, mantive padrões da indústria e garanti entregas excepcionais de projetos;</li>
+                                            <li>Utilizei metodologias DDD, BDD e ágeis para colaboração contínua em exercícios de descoberta técnica;</li>
+                                            <li>Estabeleci pipelines eficientes de CI/CD com GitHub Actions para entrega confiável de software;</li>
+                                            <li>Integrei várias serviços da AWS para uma arquitetura otimizada;</li>
+                                            <li>Apliquei princípios de arquitetura limpa para soluções robustas em Python com código bem organizado.</li>`,
         skill_educacao: "Educação",
         skill_curso: "Engenharia de Controle e Automação",
         skill_curso_data: "Fev 2015 - Dez 2021",
