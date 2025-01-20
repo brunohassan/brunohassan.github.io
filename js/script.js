@@ -8,7 +8,9 @@ function initializePage() {
     adjustMenuIcon();
     adjustChapterSize();
     setupEventListeners();
-    setDefaultLanguage();
+    $(document).ready(function() {
+        setLanguage('EN');
+    });
 }
 
 function adjustMenuIcon() {
@@ -21,16 +23,9 @@ function setupEventListeners() {
     $('.main-nav a').click(handleNavClick);
 }
 
-function setDefaultLanguage() {
-    // Get user's browser language or stored preference
-    const userLang = navigator.language || navigator.userLanguage;
-    const defaultLang = userLang.startsWith('pt') ? 'PT' : 'EN';
-    setLanguage(defaultLang);
-}
-
 function setLanguage(languageCode) {
     const language = SITE_CONFIG.languages[languageCode];
-    if (!language) return;
+    if (!language) return 'Language not found';
 
     $('[data-lang]').each(function() {
         const path = this.dataset.lang.split('.');
@@ -105,3 +100,5 @@ function createColumnizedList(items) {
     }
     return html;
 }
+
+window.setLanguage = setLanguage;
