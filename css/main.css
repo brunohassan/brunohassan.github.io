@@ -102,3 +102,18 @@
         margin-left: 4vh;
     }
 }
+
+.skills-list {
+    display: inline-block;
+    list-style: disc;
+    vertical-align: top;
+    width: 33%;
+    margin: 0 0 0 0;
+}
+
+@media (max-width: 576px) {
+    .skills-list {
+        display: block;
+        margin: 0;
+    }
+}
