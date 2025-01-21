@@ -65,7 +65,10 @@
 }
 
 .chapter__content {
+    position: relative;
     min-height: 100vh;
+    overflow-y: visible;
+    height: auto;
 }
 
 @media (min-width:992px) {
@@ -84,6 +87,15 @@
         .site-wrapper {
             font-size: 93%;
         }
+    }
+    .chapter .chapter__content {
+        position: relative;
+        width: 50%;
+        left: 50%;
+        overflow: visible;
+        z-index: 100;
+        -webkit-transition: 1s width cubic-bezier(.77, 0, .175, 1) 0, 1s left cubic-bezier(.77, 0, .175, 1) 0;
+        transition: 1s width cubic-bezier(.77, 0, .175, 1) 0, 1s left cubic-bezier(.77, 0, .175, 1) 0;
     }
 }
 
