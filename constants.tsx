@@ -14,6 +14,7 @@ export const CONTACT_LINKS = [
   { icon: Smartphone, text: SHARED_INFO.phone, href: `tel:${SHARED_INFO.phone.replace(/\s/g, '')}` },
   { icon: Mail, text: SHARED_INFO.email, href: `mailto:${SHARED_INFO.email}` },
   { icon: Linkedin, text: SHARED_INFO.linkedinDisplay, href: SHARED_INFO.linkedin },
+  { icon: Github, text: "github.com/brunohassan", href: "https://github.com/brunohassan" },
   { icon: Globe, text: SHARED_INFO.websiteDisplay, href: SHARED_INFO.website },
 ];
 
