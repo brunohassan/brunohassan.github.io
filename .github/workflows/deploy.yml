@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Include CV (if present)
+        if: hashFiles('CV.pdf') != ''
+        run: cp CV.pdf dist/CV.pdf
       - name: Include CNAME (if present)
         if: hashFiles('CNAME') != ''
         run: cp CNAME dist/CNAME

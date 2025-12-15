@@ -49,13 +49,14 @@ export const Hero: React.FC = () => {
               >
                 <span>{ui.hero.contactBtn}</span>
               </a>
-              <button 
-                onClick={() => window.print()}
+              <a 
+                href="/CV.pdf"
+                download="Bruno_Mouazzem_CV.pdf"
                 className="px-6 py-3 border border-slate-700 text-slate-300 font-mono rounded hover:border-teal-500 hover:text-teal-400 transition-all flex items-center gap-2 bg-slate-900/50"
               >
                 <Download className="w-4 h-4" />
                 <span>{ui.hero.downloadBtn}</span>
-              </button>
+              </a>
             </div>
           </Reveal>
           
