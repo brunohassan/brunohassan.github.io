@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+## Bruno Mouazzem — Portfolio (Vite + React)
 
-# Run and deploy your AI Studio app
+A minimal, fast personal site built with Vite and React.
 
-This contains everything you need to run your app locally.
+### Prerequisites
+- Node.js 18+ (recommended 20/22)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1k64NTcHV1oSnqpb2rSmVlhceqWKhjOcG
+### Run locally (dev)
+```bash
+npm install
+npm run dev
+```
 
-## Run Locally
+### Build for production
+```bash
+npm run build
+```
 
-**Prerequisites:**  Node.js
+Preview the production build:
+```bash
+npm run preview
+```
 
+### Serve the built site with Python (optional)
+If you prefer a simple static server after building:
+```bash
+python3 -m http.server 8000 --directory dist
+```
+Open http://localhost:8000
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Deployment (GitHub Pages)
+This repository includes a GitHub Actions workflow that builds the site and deploys the `dist/` folder to GitHub Pages on every push to `main`.
+
+- Custom domain is supported via the `CNAME` file at the repo root.

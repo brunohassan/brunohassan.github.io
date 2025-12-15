@@ -31,13 +31,14 @@ export const Navbar: React.FC = () => {
   ];
 
   const linkedinLink = CONTACT_LINKS.find(link => link.href.includes('linkedin'))?.href || '#';
+  const githubLink = CONTACT_LINKS.find(link => link.href.includes('github.com'))?.href || '#';
 
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'pt' : 'en');
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 border-b print-hidden ${scrolled ? 'bg-slate-950/90 border-slate-800 backdrop-blur-md py-3' : 'bg-transparent border-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 border-b print:hidden ${scrolled ? 'bg-slate-950/90 border-slate-800 backdrop-blur-md py-3' : 'bg-transparent border-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0 flex items-center gap-2">
@@ -74,7 +75,7 @@ export const Navbar: React.FC = () => {
             <a href={linkedinLink} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
-             <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
+             <a href={githubLink} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors">
               <Github className="w-5 h-5" />
             </a>
           </div>

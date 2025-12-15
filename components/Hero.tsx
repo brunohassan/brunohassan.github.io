@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
         <div className="space-y-8 order-2 lg:order-1">
           <Reveal>
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 font-mono text-sm print-hidden">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 font-mono text-sm print:hidden">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
@@ -29,8 +29,8 @@ export const Hero: React.FC = () => {
               </h1>
               
               <div className="flex items-center gap-3 text-xl sm:text-2xl text-slate-400 font-mono">
-                <ChevronRight className="w-6 h-6 text-teal-500 print-hidden" />
-                <span className="text-teal-400 text-slate-600">{personalInfo.role}</span>
+                <ChevronRight className="w-6 h-6 text-teal-500 print:hidden" />
+                <span className="text-teal-400">{personalInfo.role}</span>
               </div>
             </div>
           </Reveal>
@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
           </Reveal>
 
           <Reveal delay={400}>
-            <div className="flex flex-wrap gap-4 pt-4 print-hidden">
+            <div className="flex flex-wrap gap-4 pt-4 print:hidden">
                <a 
                 href="#contact"
                 className="px-6 py-3 bg-teal-500 text-slate-950 font-bold font-mono rounded hover:bg-teal-400 transition-all hover:shadow-[0_0_20px_rgba(20,184,166,0.3)] flex items-center gap-2"
@@ -60,7 +60,7 @@ export const Hero: React.FC = () => {
           </Reveal>
           
           <Reveal delay={600}>
-            <div className="flex items-center gap-6 pt-4 text-slate-500 print-hidden">
+            <div className="flex items-center gap-6 pt-4 text-slate-500 print:hidden">
                {CONTACT_LINKS.map((link, idx) => (
                   <a key={idx} href={link.href} target="_blank" rel="noreferrer" className="hover:text-teal-400 transition-colors">
                      <link.icon className="w-6 h-6" />
@@ -78,7 +78,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Right Column: Code Window */}
-        <div className="order-1 lg:order-2 print-hidden">
+        <div className="order-1 lg:order-2 print:hidden">
           <Reveal delay={300}>
             <div className="relative rounded-lg bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden font-mono text-sm leading-relaxed group hover:border-slate-700 transition-colors">
               {/* Window Header */}
