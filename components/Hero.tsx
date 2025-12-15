@@ -3,6 +3,7 @@ import { CONTACT_LINKS } from '../constants';
 import { Download, Terminal, ChevronRight } from 'lucide-react';
 import { Reveal } from './Reveal';
 import { useLanguage } from './LanguageContext';
+import { Typewriter } from './Typewriter';
 
 export const Hero: React.FC = () => {
   const { content } = useLanguage();
@@ -25,7 +26,7 @@ export const Hero: React.FC = () => {
               </div>
               
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-100 tracking-tight">
-                {personalInfo.name}
+                <Typewriter text={personalInfo.name} speed={80} startDelay={200} />
               </h1>
               
               <div className="flex items-center gap-3 text-xl sm:text-2xl text-slate-400 font-mono">
