@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
                           1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12
                       </div>
                       <div>
-                          <span className="text-purple-400">const</span> <span className="text-blue-400">developer</span> <span className="text-slate-400">=</span> <span className="text-yellow-400">{'{'}</span><br/>
+                          <span className="text-yellow-400">{'{'}</span><br/>
                           &nbsp;&nbsp;<span className="text-sky-300">name</span>: <span className="text-green-400">"{personalInfo.name}"</span>,<br/>
                           &nbsp;&nbsp;<span className="text-sky-300">role</span>: <span className="text-green-400">"{personalInfo.role}"</span>,<br/>
                           &nbsp;&nbsp;<span className="text-sky-300">experience</span>: <span className="text-orange-400">6</span>,<br/>
